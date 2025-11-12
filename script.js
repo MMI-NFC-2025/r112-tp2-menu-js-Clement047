@@ -8,4 +8,4 @@ toggle.addEventListener( "click", () => {
     nav.ariaHidden = nav.ariaHidden === "false";
     toggle.ariaExpanded = toggle.ariaExpanded === "true";
     document.body.classList.toggle("noscroll");
-})
+});
