@@ -7,4 +7,5 @@ toggle.addEventListener( "click", () => {
     // Mise à jour des attributs ARIA pour acessibilité
     nav.ariaHidden = nav.ariaHidden === "false";
     toggle.ariaExpanded = toggle.ariaExpanded === "true";
+    document.body.classList.toggle("noscroll");
 })
