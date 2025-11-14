@@ -5,3 +5,4 @@ toggle.addEventListener("click", () => {
     toggle.ariaExpended = toggle.ariaExpended === "true";
     document.body.classList.toggle("noscroll");
 });
+

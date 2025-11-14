@@ -4,10 +4,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes animaux</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div style="display:flex;align-items:center;gap:12px;padding:12px;">
+      <a class="menu-btn" href="animaux.html" aria-label="Voir la liste des animaux">🍔</a>
+      <h1>Mes animaux</h1>
+    </div>
+  </header>
+
+  <main>
+    <p>Bienvenue — cliquez sur le burger pour voir la liste complète des animaux.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu JS</title>
   <!-- Déclaration de la feuille de style -->
   <link rel="stylesheet" href="/src/css/components/menu.css" />
-
+  <script type="module" src="/src/js/script.js"></script>
 </head>
 
 <body>
@@ -16,24 +43,27 @@
 
     <div class="headerend">
 
-      <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+      <a href="/menu.html" class="headermenu-btn menu-btn" aria-label="menu">
         🍔
-      </button>
+      </a>
 
       <!-- Menu principal -->
       <nav class="headermenu menu" id="mainNav" aria-hidden="true">
+        <h4>Menu</h4>
         <ul class="menulist list-unstyled">
-          <li class="menuitem">
-            <a class="menulink" href="#">Item de menu un</a>
+          <li>
+            <button class="category" data-target="dogs">Chiens ▾</button>
+            <ul class="sub" data-owner="dogs" hidden>
+              <li><a href="/dogs/chien-1.html">Chien 1</a></li>
+              <li><a href="/dogs/chien-2.html">Chien 2</a></li>
+            </ul>
           </li>
-          <li class="menuitem">
-            <a class="menulink" href="#">Item de menu deux</a>
-          </li>
-          <li class="menuitem">
-            <a class="menulink" href="#">Item de menu trois</a>
-          </li>
-          <li class="menuitem">
-            <a class="menulink" href="#">Item de menu quatre</a>
+          <li>
+            <button class="category" data-target="cats">Chats ▾</button>
+            <ul class="sub" data-owner="cats" hidden>
+              <li><a href="/cats/chat-1.html">Chat 1</a></li>
+              <li><a href="/cats/chat-2.html">Chat 2</a></li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -42,14 +72,12 @@
   </header>
   <!-- Contenu principal de la page -->
   <main>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est adipisci repellat aliquid, sit commodi facere
-      similique quidem iste sunt accusamus accusantium ab unde dolore quaerat voluptatibus error voluptatem molestiae?
-    </p>
+    <h1>Bienvenue sur la page de mes animaux</h1>
+    <img class="media media--fullwidth" src="https://cdn.unitycms.io/images/EF--jPg4aPLB5B8xbzCOSt.jpg"
+      alt="Photo de chat" />
   </main>
   <!-- Fin du contenu principal -->
 
 </body>
-<script src="script.js"></script>
 
 </html>

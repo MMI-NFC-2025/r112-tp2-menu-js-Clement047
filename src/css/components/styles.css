@@ -1,0 +1,11 @@
+nav>h4::before {
+    content: url("../../public/icones/book.svg");
+}
+
+nav>ul>li>a::before {
+    content: url("../../public/icones/bag-plus.svg");
+}
+
+nav>ul>li>ul>li>a::before {
+    content: url("../../public/icones/archive.svg");
+}
